@@ -1,0 +1,10 @@
+Package: readSRMtxt
+Type: Package
+Title: Convert a SRM txt file into a matrix. 
+Version: 1.0
+Date: 2016-04-23
+Author: David Garcia
+Maintainer: David Garcia <dgseis@hotmail.es>
+Description: Convert a SRM text file into a class object. This class object include: sample name, chromatographic retention time range, number of transitions and chromatographic time-intensity matrix (TI_matrix). TI_matrix contain: a time variable in the first column, intensity signal variables in the following columns for each transition.
+License: GPL (>=2)
+Depends: stringr, R (>= 2.14)

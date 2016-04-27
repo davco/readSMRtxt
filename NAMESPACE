@@ -1,0 +1,4 @@
+S3method(print, getSRM)
+export(getSRM)
+S3method(getSRM,default)
+

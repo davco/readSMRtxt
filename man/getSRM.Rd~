@@ -1,0 +1,33 @@
+\name{getSRM}
+\alias{getSRM}
+\alias{getSRM.default}
+\alias{print.getSRM}
+\title{Convert a SRM text file into a matrix.}
+\description{Convert a SRM text file into a class object. This class object include: sample name, chromatographic retention time range, number of transitions and chromatographic time-intensity matrix.}
+\usage{
+getSRM(x)
+
+\method{getSRM}{default}(x)
+\method{print}{getSRM}(x)
+}
+
+\arguments{
+  \item{x}{ a SRM text file. }
+}
+\value{
+ A class, basically a list including elements
+ \item{sample_name}{ sample name }
+ \item{timestamp}{ chromatographic retention time range }
+ \item{transitions}{ number of transitions }
+ \item{TI_matrix}{ chromatographic time-intensity matrix }
+}
+
+\author{David Garcia}
+
+\examples{
+path_to_spectra <- system.file("exdata", "foo_spectra.txt", package = "readSRMtxt")
+getSRM(path_to_spectra)
+}
+
+\keyword{convert}
+
