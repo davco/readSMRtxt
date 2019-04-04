@@ -20,10 +20,10 @@ install_github("davco/readSRMtxt")
 library("readSRMtxt")
 path_to_spectra <- system.file("extdata", "foo_spectra.txt", package = "readSRMtxt")
 
-     spectra_class_format <- getSRM(path_to_spectra) # convert the .txt file into a class object format
+spectra_class_format <- getSRM(path_to_spectra) # convert the .txt file into a class object format
 
-     # Plot a TIC
-     spectra_matrix <- spectra_class_format$TI_matrix
-     TIC <- apply(spectra_matrix[,(2:dim(spectra_matrix)[2])], 1, sum, na.rm=T)
-     plot(TIC~spectra_matrix[,1], type= "l", xlab="Time (min)", main=paste("TIC of", spectra_class_format$sample_name, "sample", sep=" ")) # plotting TIC
+# Plot a TIC
+spectra_matrix <- spectra_class_format$TI_matrix
+TIC <- apply(spectra_matrix[,(2:dim(spectra_matrix)[2])], 1, sum, na.rm=T)
+plot(TIC~spectra_matrix[,1], type= "l", xlab="Time (min)", main=paste("TIC of", spectra_class_format$sample_name, "sample", sep=" ")) # plotting TIC
 ```
