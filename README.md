@@ -10,16 +10,15 @@ library(devtools)
 install_github("davco/readSRMtxt")
 ```
 
-# Install
+# Workflow
 
 1. Convert .wiff into a text file using ProteoWizard Software (http://proteowizard.sourceforge.net/) 
 2. Convert text file into a time-intensity matrix for each transition with this package.
 
-
 ```r
 library("readSRMtxt")
-path_to_spectra <- system.file("extdata", "foo_spectra.txt", package = "readSRMtxt")
 
+path_to_spectra <- system.file("extdata", "foo_spectra.txt", package = "readSRMtxt")
 spectra_class_format <- getSRM(path_to_spectra) # convert the .txt file into a class object format
 
 # Plot a TIC
