@@ -1,8 +1,8 @@
 # readSRMtxt
 
 
-#Description
-Convert SRM (MRM and Schedule-MRM) text file into a matrix.
+# Description
+Convert MRM and Schedule-MRM text file into a matrix.
 
 How to convert .wiff file into a matrix:
 
